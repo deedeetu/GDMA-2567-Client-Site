@@ -36,20 +36,139 @@
 
 /*----------1.1	- Headings----------*/
 
+h1, h2, h3, h4, p {
+	font-family: 'Open Sans', sans-serif;
+}
+
+h2 span, h3 {
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+h2 span {
+	font-size: 4rem;
+	line-height: 50px;
+}
+
+h2 span:first-child {
+	color: #1F394F;
+}
+
+h2 span:last-child {
+	color: #F8D83C;
+}
+
+h3 {
+	font-size: 1.5rem;
+}
 
 /*----------1.2	- Body Copy----------*/
 
+.col-3-11 p span {
+	font-size: 2.5rem;
+}
+
+.col-3-11 p {
+	margin-left: -140px;
+	font-size: 1.5rem;
+}
+
+.col-3-8 {
+	padding-top: 140px; 
+	
+}
+
+#article, #newsletter {
+	text-transform: uppercase;
+	font-size: 4rem;
+}
 
 /*----------1.3 - Button----------*/
 
+.btn a {
+	text-decoration: none;
+	padding: 10px 15px;
+	background-color: #1F394F;
+	border: 1px solid #F8D83C;
+	color: #F8D83C;
+}
+
+.btn a:hover {
+	background-color: #F8D83C;
+	color: #1F394F;
+	-webkit-transition-property:color, text;
+	-webkit-transition-duration: .5s;
+	-webkit-transition-timing-function: linear, ease-in;
+
+	-moz-transition-property:color, text;
+	-moz-transition-duration:.5s;
+	-moz-transition-timing-function: linear, ease-in;
+
+	-o-transition-property:color, text;
+	-o-transition-duration:.5s;
+	-o-transition-timing-function: linear, ease-in;
+	
+	transition-property:color, text;
+	transition-duration:.5s;
+	transition-timing-function: linear, ease-in;
+}
 
 /*----------1.4 - Lists----------*/
 
+#packages li, #contact li{
+	list-style: none;
+}
+
+#packages ul {
+	margin-left: -3rem;
+}
+
+#contact li {
+	display: inline-block;
+}
 
 /*----------1.5 - Table----------*/
 
 
 /*----------1.6 - Form----------*/
+
+form {
+	margin: 0 auto;
+}
+
+form .col-1-2 {
+	padding-bottom: 20px;
+}
+
+label, input, textarea {
+    text-align: left;
+	margin-bottom: 4px;
+    width: 50%;
+}
+
+input {
+	height: 35px;
+	padding: 10px 10px;
+	border: none;
+	background: rgba(31, 57, 79, 0.45);
+}
+
+label, form a {
+	color: #616262;
+}
+
+label {
+	margin-top: 20px;
+}
+
+
+textarea {
+	height: 160px;
+	width: 50%;
+	padding: 10px 15px;
+	border: none;
+	background: rgba(31, 57, 79, 0.45);
+}
 
 
 /*--------------------------------------------------------------
@@ -57,6 +176,26 @@
 -------------------------------------------------------------- */
 
 /*----------2.1 - Main----------*/
+
+nav a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #1F394F;
+}
+
+nav a:hover {
+	text-decoration: underline #fff;	
+}
+
+nav li{
+	display: inline-block;
+	padding: 40px 0 0 50px;
+	float: right;
+}
+
+nav {
+	text-align: right;
+}
 
 /*----------2.2 - Sub----------*/
 
@@ -67,6 +206,23 @@
 -------------------------------------------------------------- */
 
 /*----------3.1 - Site Structure----------*/
+
+.row {
+	border-collapse: collapse;
+}
+
+.flex {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-box;
+	display: -webkit-flex;
+	display: flex;
+	margin: 2em auto;
+}
+
+.col-3-11 {
+	padding: 20px 0;
+}
 
 /*----------3.2	- Site Header----------*/
 
@@ -80,11 +236,39 @@
 /*----------4.1	- Sprite----------*/
 
 
+.fa-facebook-square, .fa-instagram {	
+	color: #F8D83C;
+}
+
+.fa-facebook-square:before, .fa-instagram:before {
+	font-size: 3rem;
+	padding-right: 10px;
+}
+
+.fa-facebook-square:hover, .fa-instagram:hover {
+	color: #1F394F;
+	-webkit-transition-property:color, text;
+	-webkit-transition-duration: .5s;
+	-webkit-transition-timing-function: linear, ease-in;
+
+	-moz-transition-property:color, text;
+	-moz-transition-duration:.5s;
+	-moz-transition-timing-function: linear, ease-in;
+
+	-o-transition-property:color, text;
+	-o-transition-duration:.5s;
+	-o-transition-timing-function: linear, ease-in;
+	
+	transition-property:color, text;
+	transition-duration:.5s;
+	transition-timing-function: linear, ease-in;
+}
+
 /*----------4.2	- Media Quiery----------*/
 
 /*----------4.3	- Images----------*/
 
-#hero, #mission-img {
+#hero, #mission-img, #about-1, #about-2 {
 	background-repeat: no-repeat;
 	-moz-background-size: cover;
 	-webkit-background-size: cover;
@@ -92,7 +276,7 @@
 	-ms-background-size: cover;
 	background-size: cover;
 	background-position: center 0;
-	padding-bottom: 300px;
+	padding-bottom: 430px;
 }
 
 #hero {
@@ -103,9 +287,26 @@
 	background-image: url(../img/our-mission.jpg);
 }
 
+#about-1 {
+	background-image: url(../img/about-us-1.jpg)
+}
+
+#about-2 {
+	background-image: url(../img/about-us-2.jpg)
+}
+
+
+header img, footer img {
+	height: 80px;
+}
+
 .parallax-window {
     min-height: 400px;
     background: transparent;
+}
+
+.col-a-s-2-3 img {
+	height: 20px;
 }
 
 /*--------------------------------------------------------------
@@ -119,15 +320,52 @@
 
 .bg-yellow {
 	background-color: #F8D83C;
+	padding: 20px 0;
 }
 
 .bg-blue {
 	background-color: #1F394F;
+	color: #fff;
 }
+
+#5day .bg-blue, .bg-blue:last-child {
+	padding: 30px;
+}
+
+hr {
+	border: 0; 
+	height: 1px; 
+	background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+	background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+	background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+	background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); 
+}
+
 
 
 /*----------5.3 - Alignments----------*/
 
+header .bg-yellow {
+	padding: none;
+}
+
+.text-align {
+	text-align: center;
+}
+
+.col-s-1-4 li {
+	display: inline-block;
+	
+}
+
+#about .col-1-2:first-child, #about .col-1-2:last-child {
+	padding-top: 140px;
+}
+
+
+#packages .bg-blue, #article .bg-blue {
+	padding: 20px;
+}
 /*--------------------------------------------------------------
 6.0 - Responsive
 -------------------------------------------------------------- */
@@ -138,5 +376,51 @@
 	}
 	html {
 		font-size: 8px;
+	}
+	
+	.col-s-1-2 {
+		width: 50%;
+	}
+	.col-a-s-1-3 {
+		width: 40%;
+	}
+	.col-a-s-2-3 {
+		width: 60%;
+		text-align: right;
+	}
+	.col-a-1-3, .col-1-4, .col-3-4, .col-s-3-4, .col-1-3, .col-2-3, #contact .col-1-2 {
+		width: 100%;
+	}
+	nav li{
+	display: inline-block;
+	padding: 20px 0 0 10px;
+	float: left;
+		margin: 0;
+	}
+	.flex {
+		flex-direction: column;
+		flex: 1 1 200px;
+	}
+	.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+	}
+	.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+	}
+	#about-1, #about-2 {
+		display: none;
+	}
+	#about .col-1-2:last-child {
+		margin-top: -20px;
+	}
+	label, input, textarea {
+    width: 100%;
 	}
 }
